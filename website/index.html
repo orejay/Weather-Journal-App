@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weather Journal</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+ <body>
+   <div id = "app">
+     <div id="logo-div"><img alt="Logo" src="logo/logo.png" width="100%" height="auto" id="logo"/></div>
+     <div class ="holder headline">
+       Ore's Weather Journal App
+      </div>
+      <div id="content">
+        <div id="date-time">
+          <div id="time">time</div>
+          <div id="date">date</div>
+        </div>
+        <div id="entries">
+          <div class="holder zip">
+            <label id="zip-label" for="zip">Enter Zipcode here</label>
+            <input type="text" id="zip" placeholder="enter zip code here">
+          </div>
+          <div class="holder feel">
+            <label for="feelings" id="feelings-label">How are you feeling today?</label>
+            <textarea class="myInput" id="feelings" placeholder="start with (I feel)" rows="9" cols="50"></textarea>
+            <button id="generate" type="submit"> Generate </button>
+          </div>
+        </div>
+        <div class="holder entry">
+          <div id="icon"></div>
+          <div class="title"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
